@@ -123,52 +123,80 @@ export default async function MinistryPage({ params }: { params: Promise<{ slug:
               Back to Ministries
             </Link>
             
-            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
-              <div className="max-w-2xl">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <Icon className="h-8 w-8" />
-                  </div>
-                </div>
-                <h1 className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
-                  {ministry.name}
-                </h1>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  {ministry.description}
-                </p>
-                
-                {/* Meeting Info */}
-                <div className="mt-8 flex flex-wrap gap-6">
-                  {ministry.meeting_day && (
-                    <div className="flex items-center gap-2 text-foreground">
-                      <Calendar className="h-5 w-5 text-primary" />
-                      <span>{ministry.meeting_day}s</span>
-                    </div>
-                  )}
-                  {ministry.meeting_time && (
-                    <div className="flex items-center gap-2 text-foreground">
-                      <Clock className="h-5 w-5 text-primary" />
-                      <span>{ministry.meeting_time}</span>
-                    </div>
-                  )}
-                  {ministry.leader_name && (
-                    <div className="flex items-center gap-2 text-foreground">
-                      <User className="h-5 w-5 text-primary" />
-                      <span>Led by {ministry.leader_name}</span>
-                    </div>
-                  )}
-                </div>
-              </div>
+            <div className="flex flex-col lg:flex-row items-center gap-10">
+  {/* IMAGE */}
+  {ministry.image_url && (
+    <div
+      className="
+        w-full 
+        lg:w-1/2 
+        order-1 
+        lg:order-2
+      "
+    >
+      <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl">
+        <img
+          src={ministry.image_url}
+          alt={ministry.name}
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  )}
 
-              <div className="flex flex-col gap-3 lg:items-end">
-                <Button size="lg" asChild>
-                  <Link href="/contact">Join This Ministry</Link>
-                </Button>
-                <Button size="lg" variant="outline" asChild>
-                  <Link href="/contact">Contact Ministry Leader</Link>
-                </Button>
-              </div>
-            </div>
+  {/* CONTENT */}
+  <div className="w-full lg:w-1/2 order-2 lg:order-1">
+    <div className="max-w-2xl">
+      <div className="flex items-center gap-4 mb-4">
+        <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+          <Icon className="h-8 w-8" />
+        </div>
+      </div>
+
+      <h1 className="font-serif text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-balance">
+        {ministry.name}
+      </h1>
+
+      <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+        {ministry.description}
+      </p>
+
+      {/* Meeting Info */}
+      <div className="mt-8 flex flex-wrap gap-6">
+        {ministry.meeting_day && (
+          <div className="flex items-center gap-2">
+            <Calendar className="h-5 w-5 text-primary" />
+            <span>{ministry.meeting_day}s</span>
+          </div>
+        )}
+        {ministry.meeting_time && (
+          <div className="flex items-center gap-2">
+            <Clock className="h-5 w-5 text-primary" />
+            <span>{ministry.meeting_time}</span>
+          </div>
+        )}
+        {ministry.leader_name && (
+          <div className="flex items-center gap-2">
+            <User className="h-5 w-5 text-primary" />
+            <span>Led by {ministry.leader_name}</span>
+          </div>
+        )}
+      </div>
+
+      {/* CTA Buttons */}
+      <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <Button size="lg" asChild>
+          <Link href="/contact">Join This Ministry</Link>
+        </Button>
+        <Button size="lg" variant="outline" asChild>
+          <Link href="/contact">Contact Ministry Leader</Link>
+        </Button>
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
         </section>
 

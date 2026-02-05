@@ -16,8 +16,8 @@ const ministryLinks = [
   { name: "Youth Ministry", href: "/ministries/youth" },
   { name: "Women's Ministry", href: "/ministries/women" },
   { name: "Men's Fellowship", href: "/ministries/men" },
-  { name: "Music Ministry", href: "/ministries/music" },
-  { name: "Outreach", href: "/ministries/outreach" },
+  { name: "Music Ministry", href: "/ministries/worship" },
+  { name: "Outreach", href: "/ministries/missions" },
 ]
 
 export function Footer() {

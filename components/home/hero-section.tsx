@@ -46,7 +46,7 @@ export function HeroSection() {
         style={{
           y: backgroundY,
           backgroundImage:
-            "url('https://svxrsjrkghluzxwtmjvt.supabase.co/storage/v1/object/sign/church%20images/WhatsApp%20Image%202026-02-01%20at%2012.23.14%20PM.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NmQ0Y2QzZS1hZjU3LTQwOWQtYjBmNy1kYTM1MDQwMTZlNzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjaHVyY2ggaW1hZ2VzL1doYXRzQXBwIEltYWdlIDIwMjYtMDItMDEgYXQgMTIuMjMuMTQgUE0uanBlZyIsImlhdCI6MTc2OTkzNzkxOCwiZXhwIjoxOTQ1MzI5OTE4fQ.CRr8uFsQ2Zdq6_rqiv1bTMo7Sa5JVqeg2e4jMZIfiXc')",
+            "url('https://svxrsjrkghluzxwtmjvt.supabase.co/storage/v1/object/sign/church%20images/WhatsApp%20Image%202026-01-29%20at%203.07.48%20PM%20(2).jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NmQ0Y2QzZS1hZjU3LTQwOWQtYjBmNy1kYTM1MDQwMTZlNzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjaHVyY2ggaW1hZ2VzL1doYXRzQXBwIEltYWdlIDIwMjYtMDEtMjkgYXQgMy4wNy40OCBQTSAoMikuanBlZyIsImlhdCI6MTc3MDI4OTc1MywiZXhwIjoxOTQ2MjAwMTUzfQ.AQZ4NmqHLl7ZT2lUc7P8jki54kzyqbuSSwkpFiFAzbM')",
         }}
         className="absolute inset-0 z-0 bg-cover bg-no-repeat pointer-events-none bg-[position:50%_20%]"
       />

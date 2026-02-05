@@ -56,7 +56,7 @@ const ministries = [
     icon: Music,
     name: "Music Ministry",
     description: "Leading the congregation in worship through music and song.",
-    href: "/ministries/music",
+    href: "/ministries/worship",
     color: "bg-purple-500/10 text-purple-600",
     images: [
       "https://svxrsjrkghluzxwtmjvt.supabase.co/storage/v1/object/sign/church%20images/WhatsApp%20Image%202026-01-29%20at%203.07.49%20PM.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NmQ0Y2QzZS1hZjU3LTQwOWQtYjBmNy1kYTM1MDQwMTZlNzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjaHVyY2ggaW1hZ2VzL1doYXRzQXBwIEltYWdlIDIwMjYtMDEtMjkgYXQgMy4wNy40OSBQTS5qcGVnIiwiaWF0IjoxNzY5OTU5NjY1LCJleHAiOjE5NDU4NzAwNjV9.EAhw7iKkjNJoIxSP6Tl5TFEO8hzS0XwxqSNxsaWlPY8",
@@ -68,7 +68,7 @@ const ministries = [
     icon: Globe,
     name: "Outreach Ministry",
     description: "Sharing God's love through community service and missions.",
-    href: "/ministries/outreach",
+    href: "/ministries/missions",
     color: "bg-teal-500/10 text-teal-600",
     images: [
       "https://svxrsjrkghluzxwtmjvt.supabase.co/storage/v1/object/sign/church%20images/WhatsApp%20Image%202026-01-29%20at%203.07.49%20PM.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85NmQ0Y2QzZS1hZjU3LTQwOWQtYjBmNy1kYTM1MDQwMTZlNzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJjaHVyY2ggaW1hZ2VzL1doYXRzQXBwIEltYWdlIDIwMjYtMDEtMjkgYXQgMy4wNy40OSBQTS5qcGVnIiwiaWF0IjoxNzY5OTU5NjY1LCJleHAiOjE5NDU4NzAwNjV9.EAhw7iKkjNJoIxSP6Tl5TFEO8hzS0XwxqSNxsaWlPY8",
